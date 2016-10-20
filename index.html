@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+}
+</style>
+<script src="main.js"></script>
+<script>
+window.addEventListener('load', function() {
+  p = new Screen(document.getElementById('canvas'));
+  for (let i = 0; i < 640; i++) {
+    for (let j = 0; j < 360; j++) {
+      p.draw(i,j, '#'+(Math.random()*0xFFFFFF<<0).toString(16));
+    }
+  }
+}, false);
+</script>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+</body>
+</html>
