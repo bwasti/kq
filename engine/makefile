@@ -1,7 +1,7 @@
 CC=clang++
 CFLAGS=-c -Wall --std=c++14
 LDFLAGS=
-SOURCES=engine.cpp
+SOURCES=game_server.cpp #$(wildcard *.cpp)
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=game_engine
 
@@ -14,4 +14,4 @@ $(EXECUTABLE): $(OBJECTS)
 	    $(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm $(EXECUTABLE) *.o
+	rm -f $(EXECUTABLE) *.o
