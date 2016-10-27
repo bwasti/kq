@@ -1,1 +1,4 @@
-*.o
+obj/
+*.swp
+*.swo
+kqd

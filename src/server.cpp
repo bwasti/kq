@@ -135,7 +135,6 @@ public:
                                   Team::RED));
       } else {
         // Parse request.
-
       }
     }
 
