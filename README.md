@@ -1,5 +1,5 @@
 # kq
 
-    cd kq && python -m SimpleHTTPServer
+    cd kq && make run
     open http://localhost:8000
 
