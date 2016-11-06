@@ -1,25 +1,28 @@
 #include <vector>
 
+#include "gateway.h"
+#include "platform.h"
+
 namespace killerqueen {
 
 class MapSpec {
 
 public:
-  std::vector<Platform> getPlatforms() {
-    return platforms;
+  std::vector<Platform> GetPlatforms() {
+    return platforms_;
   }
-  std::vector<Gateway> getGateways() {
-    return gateways;
+  std::vector<Gateway> GetGateways() {
+    return gateways_;
   }
-  setPlatforms(std::vector<Platform> platforms) {
-    this.platforms = platforms;
+  void SetPlatforms(std::vector<Platform> platforms) {
+    platforms_ = platforms;
   }
-  setGateways(std::vector<Gateway> gateways) {
-    this.gateways = gateways;
+  void SetGateways(std::vector<Gateway> gateways) {
+    gateways_ = gateways;
   }
 
 private:
-  std::vector<Platform> platforms;
-  std::vector<Gateway> gateways;
-}
+  std::vector<Platform> platforms_;
+  std::vector<Gateway> gateways_;
+};
 } // namespace killerqueen

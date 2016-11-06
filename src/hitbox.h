@@ -1,3 +1,5 @@
+#include "util.h"
+
 namespace killerqueen {
 
 class Hitbox {
@@ -7,7 +9,7 @@ public:
     bottom_left_ = bl;
     top_right_ = tr;
   }
-  HasCollision(Point bl, Point tr) {
+  bool HasCollision(Point bl, Point tr) {
     return bl.x >= bottom_left_.x &&
            tr.x <= tr.x &&
            bl.y >= bottom_left_.y &&
